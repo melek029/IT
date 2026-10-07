@@ -1,8 +1,20 @@
-h1{
-    color: #2222ff;
-    font-family: montserrat;
+li:first-child{
+    color: teal;
 }
-p{
-    font-weight: 700;
-    font-family: montserrat;
+li:nth-child(2){
+    color: red;
+}
+li:last-child{
+    color: green;
+}
+li:hover{
+    color: purple;
+}
+h1{
+    color: rgb(0, 0, 161);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
 }
