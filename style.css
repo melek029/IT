@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-body{
-    font-family: "Roboto", sans-serif;
+.task-first{
+    background-color: aqua;
+    margin-bottom: 60px;
 }
-th{
-    background-color: lightgrey;
-    text-align: center;
-}
-th, td{
-    border-bottom: 1px solid #b0a160;
-}
-table{
-    border-collapse: collapse;
+.task-second{
+    background-color: teal;
+    margin: 40px;
+    padding: 15px 25px;
+    width: 250px;
+    border: 5px solid black;
 }
