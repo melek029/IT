@@ -1,11 +1,25 @@
-.task-first{
-    background-color: aqua;
-    margin-bottom: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Montserrat", sans-serif;
 }
-.task-second{
-    background-color: teal;
-    margin: 40px;
-    padding: 15px 25px;
-    width: 250px;
-    border: 5px solid black;
+h1{
+    font-weight: 900px;
+}
+div{
+    background-color: #f0fff8;
+    border: 1px solid #80ced6;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+ul{
+    list-style-type: square;
+}
+th, td{
+    border: 1px solid #80ced6;
+    padding: 5px;
+}
+table{
+    background-color: #f0fff8;
+    border-collapse: collapse;
+    margin-bottom: 15px;
 }
