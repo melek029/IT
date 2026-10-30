@@ -1,25 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-body{
-    font-family: "Montserrat", sans-serif;
+.cards{
+    width: 1600px;
+    border: 3px solid black;
+    margin: 25px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-h1{
-    font-weight: 900px;
-}
-div{
-    background-color: #f0fff8;
-    border: 1px solid #80ced6;
-    margin-bottom: 15px;
-    padding: 15px;
-}
-ul{
-    list-style-type: square;
-}
-th, td{
-    border: 1px solid #80ced6;
+.card{
+    width: 230px;
+    border: 1px solid black;
     padding: 5px;
 }
-table{
-    background-color: #f0fff8;
-    border-collapse: collapse;
-    margin-bottom: 15px;
+h2{
+    color: orange;
+}
+.card-img{
+    position: relative;
+    display: inline-block;
+}
+.photo{
+    display: block;
+      width: 215px;
+}
+.overlay{
+    position: absolute;
+    width: 70px;
+    top: 10px;
+    left: 5px;
+}
+.second{
+    position: absolute;
+    width: 50px;
+    top: 5px;
+    right: 5px;
 }
