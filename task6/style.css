@@ -1,0 +1,139 @@
+.buttons{
+    height: 600px;
+    display: flex;
+    gap: 20px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.texts{
+    font-size: 30px;
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+.out-hor::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: aqua;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+.out-hor:hover::before{
+    transform: scaleX(1);
+}
+.out-hor{
+    transition: 0.5s;
+}
+.out-hor:hover{
+    color: white;
+}
+.in-hor::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: aqua;
+    z-index: -1;
+    transform: scale(1);
+    left: -100%;
+    transition: 0.5s;
+}
+
+.in-hor{
+    transition: 0.5s;
+}
+
+.in-hor:hover{
+    color: white;
+}
+
+.in-hor::after{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    right: -100%;
+    background-color: aqua;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.in-hor:hover::after{
+    right: -50%;
+}
+
+.in-hor:hover::before{
+    left: -50%;
+}
+
+.out-ver::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: aqua;
+    transform: scaleY(0);
+    transition: 0.5s;
+}
+
+.out-ver:hover::before{
+    transform: scaleY(1);
+}
+
+.in-ver::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: aqua;
+    z-index: -1;
+    top: -100%;
+    transition: 0.5s;
+}
+
+.out-ver{
+    transition: 0.5s;
+}
+
+.out-ver:hover{
+    color: white;
+}
+
+.in-ver::after{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    bottom: -100%;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.in-ver:hover::before{
+    top: -50%;
+}
+
+.in-ver:hover::after{
+    bottom: -50%;
+}
+
+.in-ver{
+    transition: 0.5s;
+}
+
+.in-ver:hover{
+    color: white;
+}
